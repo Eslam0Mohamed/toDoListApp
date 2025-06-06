@@ -17,7 +17,7 @@ var searchInput = document.getElementById("searchInput");
 var updateIndex;
 var taskArray = getFromLocalStorage();
 var titleRegex = /^[A-Z][a-z]{3,}$/;
-var descriptionRegex = /^\w{25,100}$/;
+var descriptionRegex = /^[\w\s]{25,100}$/;
 var containers = {
     nextUp : document.querySelector("#nextUp"),
     inProgress : document.querySelector("#inProgress"),
